@@ -1,0 +1,11 @@
+.redactor-main-container {
+
+
+}
+
+.redactor-item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
