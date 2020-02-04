@@ -13,7 +13,7 @@ const Input = ({tempText, writeTempData, parseData, clearInputArea}) => {
                       id=""
                       cols="30"
                       rows="10"/>
-            {tempText == false
+            {!tempText
                 ? <button disabled={true} onClick={() => parseData(tempText)}>Write Data</button>
                 : <button onClick={() => parseData(tempText)}>Write Data</button>}
             <button onClick={() => clearInputArea()}>Clear</button>

@@ -7,6 +7,7 @@ const CATEGORY_OVERRIDE_EDIT = "CATEGORY_OVERRIDE_EDIT";
 const TVGID_OVERRIDE_EDIT = "TVGID_OVERRIDE_EDIT";
 const SAVE_CURRENT_DATA = "SAVE_CURRENT_DATA";
 const SORT_BY_NAMES = "SORT_BY_NAMES";
+const LIVE_SEARCHING_TEXT = "LIVE_SEARCHING_TEXT";
 
 const parse = data => {
     let tempStr = '', index = [], tempArr = [], id = 0;
@@ -95,7 +96,8 @@ const initialState = {
     outputData: null,
     data: null,
     tempData: "",
-    sort: false
+    sort: false,
+    search: null
 };
 
 const replaceReducer = (state = initialState, action) => {
@@ -169,9 +171,16 @@ const replaceReducer = (state = initialState, action) => {
             sort: action.boolean
         }
     }
+    if (action.type === LIVE_SEARCHING_TEXT) {
+        return {
+            ...state,
+            search: action.text
+        }
+    }
     return state
 };
 
+export const liveSearchText = (text) => ({type: "LIVE_SEARCHING_TEXT", text});
 export const sortByNames = (boolean) => ({type: "SORT_BY_NAMES", boolean});
 export const saveCurrentChanges = (data) => ({type: "SAVE_CURRENT_DATA", data});
 export const categoryOverrideEdit = (text, id) => ({type: "CATEGORY_OVERRIDE_EDIT", text, id});

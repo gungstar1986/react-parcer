@@ -15,3 +15,14 @@
     width: 90px;
     margin: 15px 30px;
 }
+.footer-sort-button {
+    width: 90px;
+}
+.footer-live-search {
+    padding-left: 5px;
+    margin: 10px 30px;
+    width: 250px;
+    height: 24px;
+    float: left;
+    border-radius: 5px;
+}

@@ -2,7 +2,6 @@ import React from "react";
 import "./Redactor.css"
 
 const Redactor = ({data, checkboxEdit, nameOverrideEdit, categoryOverrideEdit, tvGidEdit}) => {
-
     const element = data.map((item, id) => {
         return (
             <div key={id} className={"redactor-item"}>
@@ -32,7 +31,6 @@ const Redactor = ({data, checkboxEdit, nameOverrideEdit, categoryOverrideEdit, t
             </div>
         )
     });
-
 
     return (
         <div className={"redactor-main-container"}>
