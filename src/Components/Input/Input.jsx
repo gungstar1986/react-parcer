@@ -7,7 +7,7 @@ const Input = ({tempText, writeTempData, parseData, clearInputArea}) => {
     return (
         <div className={"input-main-container"}>
             <textarea onChange={(e) => writeTempData(e.currentTarget.value)}
-                      placeholder={"Enter XML Data Here"}
+                      placeholder={"Enter <channels Data Here"}
                       value={tempText}
                       name=""
                       id=""

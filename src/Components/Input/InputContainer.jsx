@@ -1,5 +1,4 @@
 import React from "react";
-import "./Input.css"
 import Input from "./Input";
 import {connect} from "react-redux";
 import {clearInputArea, parseData, writeTempData} from "../../Redux/replace-reducer";

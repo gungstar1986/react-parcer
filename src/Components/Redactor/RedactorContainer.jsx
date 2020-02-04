@@ -1,5 +1,4 @@
 import React from "react";
-import "./Redactor.css"
 import Redactor from "./Redactor";
 import {connect} from "react-redux";
 import {Redirect} from "react-router-dom";
@@ -16,7 +15,8 @@ const RedactorContainer = props => props.data ? <Redactor {...props}/> : <Redire
 const mapStateToProps = state => ({
     data: state.replacer.data,
     sort: state.replacer.sort,
-    search: state.replacer.search
+    search: state.replacer.search,
+    override: state.replacer.sortOverride
 });
 const mapDispatchToProps = {
     checkboxEdit,

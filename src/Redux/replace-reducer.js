@@ -7,8 +7,9 @@ const CATEGORY_OVERRIDE_EDIT = "CATEGORY_OVERRIDE_EDIT";
 const TVGID_OVERRIDE_EDIT = "TVGID_OVERRIDE_EDIT";
 const SAVE_CURRENT_DATA = "SAVE_CURRENT_DATA";
 const SORT_BY_NAMES = "SORT_BY_NAMES";
+const SORT_BY_OVERRIDE = "SORT_BY_OVERRIDE";
 const LIVE_SEARCHING_TEXT = "LIVE_SEARCHING_TEXT";
-
+const SAVE_ACTION = "SAVE_ACTION";
 const parse = data => {
     let tempStr = '', index = [], tempArr = [], id = 0;
     for (let i = 0; i <= data.length; i++) {
@@ -97,9 +98,10 @@ const initialState = {
     data: null,
     tempData: "",
     sort: false,
-    search: null
+    sortOverride: false,
+    search: null,
+    save: null
 };
-
 const replaceReducer = (state = initialState, action) => {
     if (action.type === WRITE_TEMP_DATA) {
         return {
@@ -162,13 +164,25 @@ const replaceReducer = (state = initialState, action) => {
     if (action.type === SAVE_CURRENT_DATA) {
         return {
             ...state,
-            outputData: action.data
+            outputData: action.data,
         }
     }
     if (action.type === SORT_BY_NAMES) {
         return {
             ...state,
             sort: action.boolean
+        }
+    }
+    if (action.type === SORT_BY_OVERRIDE) {
+        return {
+            ...state,
+            sortOverride: action.boolean
+        }
+    }
+    if (action.type === SAVE_ACTION) {
+        return {
+            ...state,
+            save: action.boolean
         }
     }
     if (action.type === LIVE_SEARCHING_TEXT) {
@@ -182,6 +196,8 @@ const replaceReducer = (state = initialState, action) => {
 
 export const liveSearchText = (text) => ({type: "LIVE_SEARCHING_TEXT", text});
 export const sortByNames = (boolean) => ({type: "SORT_BY_NAMES", boolean});
+export const sortByOverride = (boolean) => ({type: "SORT_BY_OVERRIDE", boolean});
+export const saveAction = (boolean) => ({type: "SAVE_ACTION", boolean});
 export const saveCurrentChanges = (data) => ({type: "SAVE_CURRENT_DATA", data});
 export const categoryOverrideEdit = (text, id) => ({type: "CATEGORY_OVERRIDE_EDIT", text, id});
 export const tvGidEdit = (text, id) => ({type: "TVGID_OVERRIDE_EDIT", text, id});

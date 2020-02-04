@@ -9,6 +9,7 @@ body {
     margin: 0 auto;
     width: 80%;
     height: 700px;
+    min-width: 587px;
     border: 1px solid rgb(100, 100, 100);
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;

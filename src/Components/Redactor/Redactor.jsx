@@ -9,8 +9,7 @@ const Redactor = ({data, checkboxEdit, nameOverrideEdit, categoryOverrideEdit, t
                 name: <input value={item.name}
                              readOnly={true}
                              type="text"/>
-                nameOverride: <input onClick={(e) => e.currentTarget.select()}
-                                     onChange={(e) => nameOverrideEdit(e.currentTarget.value, item.id)}
+                nameOverride: <input onChange={(e) => nameOverrideEdit(e.currentTarget.value, item.id)}
                                      value={item.nameOverride}
                                      type="text"/>
                 tvgId: <input onClick={(e) => e.currentTarget.select()}
@@ -27,7 +26,6 @@ const Redactor = ({data, checkboxEdit, nameOverrideEdit, categoryOverrideEdit, t
                                          onChange={(e) => categoryOverrideEdit(e.currentTarget.value, item.id)}
                                          value={item.categoryOverride}
                                          type="text"/>
-
             </div>
         )
     });

@@ -1,9 +1,10 @@
 .footer-container-main {
     position: absolute;
     width: 100%;
-    height: 50px;
+    min-height: 50px;
+    max-height: 100px;
     background: #888afb;
-    bottom: -50px;
+    bottom: -57px;
     left: -1px;
     border: 1px solid rgb(100, 100, 100);
     border-bottom-right-radius: 15px;
@@ -15,12 +16,21 @@
     width: 90px;
     margin: 15px 30px;
 }
-.footer-sort-button {
+.footer-saveData-button {
     width: 90px;
+    margin: 15px 10px;
+}
+.footer-sort-button {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.footer-sortOverride-button {
+    width: 150px;
 }
 .footer-live-search {
     padding-left: 5px;
-    margin: 10px 30px;
+    margin: 10px 15px;
     width: 250px;
     height: 24px;
     float: left;

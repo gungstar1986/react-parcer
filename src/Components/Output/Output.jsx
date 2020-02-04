@@ -1,9 +1,12 @@
 import React from "react";
 import "./Output.css"
 
-const Output = props => {
+const Output = ({out}) => {
+    console.log(out)
     return (
-        <div className={"output-main-container"}>Output</div>
+        <div className={"output-main-container"}>
+            <textarea value={out} name="" id="" cols="300" onClick={(e)=> e.currentTarget.select()}></textarea>
+        </div>
     )
 };
 
