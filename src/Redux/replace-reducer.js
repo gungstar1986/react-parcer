@@ -114,7 +114,8 @@ const replaceReducer = (state = initialState, action) => {
     if (action.type === PARSE_DATA) {
         return {
             ...state,
-            data: parse(action.data)
+            data: parse(action.data),
+            sortOverride: false
         }
     }
     if (action.type === CLEAR_INPUT_AREA) {

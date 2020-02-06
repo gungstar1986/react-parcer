@@ -6,6 +6,7 @@ let sortedData;
 export const withFilter = (Component) => ({data, sort, search, override, ...props}) => {
     if (!data) return <Redirect to={"/input"}/>;
 
+
     //Sort by name
     sortedData = sort
         ? data.map(el => el)

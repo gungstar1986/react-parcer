@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./Footer.css"
 import facebook from "../Img/iconfinder_facebook_circle_black_107153.png"
 

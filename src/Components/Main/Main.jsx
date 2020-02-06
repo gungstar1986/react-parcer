@@ -4,7 +4,7 @@ import "./Main.css"
 const Main = () => {
     return (
         <div className={"main-page-container"}>
-            <div className={"main-page-description"}>e2m3ubouquet Editor v1.0</div>
+            <div className={"main-page-description"}>e2m3u2bouquet Editor v1.0</div>
             <div className={"text-container"}>
                 <h4>Возможности:</h4>
                 <li>Обработка содержимого категорий sort-override листа</li>
