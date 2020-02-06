@@ -1,4 +1,4 @@
-Приложение для редактирования спутниковых (enigma2 Linux) IPTV плейлистов созданных приложением e2m3ubouquet.
+Приложение для редактирования спутниковых (enigma2 Linux) IPTV плейлистов созданных приложением e2m3u2bouquet.
 
 Посмотреть можно тут https://e2m3ubouquet-editor.firebaseapp.com/
 
