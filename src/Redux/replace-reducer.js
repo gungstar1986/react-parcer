@@ -83,7 +83,7 @@ const parse = data => {
         }
         acc.push({
             name: name || "Нет данных",
-            nameOverride: nameOverride || name,
+            nameOverride: nameOverride || name || "Нет данных",
             tvgId,
             enabled,
             category,

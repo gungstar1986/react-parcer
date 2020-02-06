@@ -8,7 +8,7 @@ const Input = ({tempText, writeTempData, parseData, clearInputArea}) => {
         <div className={"input-main-container"}>
             <div className={"input-type"}>XMLTV In Area</div>
             <textarea onChange={(e) => writeTempData(e.currentTarget.value)}
-                      placeholder={"Enter <channels .../> Data Here"}
+                      placeholder={"Enter <channel .../> Data Here"}
                       value={tempText}
                       name=""
                       id=""
