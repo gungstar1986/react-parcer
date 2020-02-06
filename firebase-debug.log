@@ -1,0 +1,50 @@
+[debug] [2020-02-06T12:19:05.752Z] ----------------------------------------------------------------------
+[debug] [2020-02-06T12:19:05.755Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-02-06T12:19:05.755Z] CLI Version:   7.12.1
+[debug] [2020-02-06T12:19:05.755Z] Platform:      win32
+[debug] [2020-02-06T12:19:05.755Z] Node Version:  v13.3.0
+[debug] [2020-02-06T12:19:05.756Z] Time:          Thu Feb 06 2020 14:19:05 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-02-06T12:19:05.756Z] ----------------------------------------------------------------------
+[debug] [2020-02-06T12:19:05.756Z] 
+[debug] [2020-02-06T12:19:05.764Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-06T12:19:05.765Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\IT\react-parcer
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using e2m3ubouquet-editor.
+[debug] [2020-02-06T12:19:12.272Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/e2m3ubouquet-editor  
+ 
+[debug] [2020-02-06T12:19:12.680Z] <<< HTTP RESPONSE 200
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2020-02-06T12:19:18.147Z] Error: kill ENOSYS
+    at process.kill (internal/process/per_thread.js:194:13)
+    at process.listener (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (events.js:219:5)
+[error] 
+[error] Error: An unexpected error has occurred.

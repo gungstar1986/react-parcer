@@ -31,7 +31,7 @@ const Footer = (props) => {
                        onClick={(e) => e.currentTarget.select()}
                        className={"footer-live-search"} type="text"
                        value={search ? search : ""}
-                       placeholder={"Поиск"}/>
+                       placeholder={"Live search"}/>
             </div>}
             {location.pathname === "/" && <div className={"footer-developer"}>
                 <span>
