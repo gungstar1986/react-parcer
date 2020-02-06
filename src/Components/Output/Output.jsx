@@ -5,7 +5,8 @@ const Output = ({out}) => {
     console.log(out)
     return (
         <div className={"output-main-container"}>
-            <textarea value={out} name="" id="" cols="300" onClick={(e)=> e.currentTarget.select()}></textarea>
+            <div className={"output-type"}>XMLTV Out Area</div>
+            <textarea defaultValue={out} name="" id="" cols="300" onClick={(e)=> e.currentTarget.select()}></textarea>
         </div>
     )
 };

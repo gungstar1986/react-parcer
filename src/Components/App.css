@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding-top: 10px;
-    font-family: Corbel, sans-serif;
+    font-family: "Droid Sans" , sans-serif;
 }
 
 .App {
@@ -10,9 +10,6 @@ body {
     width: 80%;
     height: 700px;
     min-width: 587px;
-    border: 1px solid rgb(100, 100, 100);
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
 }
 
 .main-app-content-container {
@@ -21,7 +18,16 @@ body {
     height: 615px;
     overflow-y: auto;
     overflow-x: auto;
-    background: #ffe998;
+    background: rgb(255, 251, 133);
     padding-top: 5px;
+    /*border-bottom: 5px solid black;*/
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    box-sizing: border-box;
 }
 
+@media screen and (max-width:1093px ) {
+    .main-app-content-container {
+        height: 566px;
+    }
+}

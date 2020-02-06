@@ -1,4 +1,3 @@
-    <!-- Кино HD -->
     <channel name="312 Кино HD" nameOverride="312 Кино HD" tvg-id="312-kino-hd" enabled="false" category="Кино HD" categoryOverride="Кино HD" serviceRef="5002:0:1:90b1:eaf3:5ccf:1010101:0:0:0" clearStreamUrl="false" />
     <channel name="312 Сериал HD" nameOverride="312 Сериал HD" tvg-id="312-serial-hd" enabled="false" category="Кино HD" categoryOverride="Кино HD" serviceRef="5002:0:1:90b2:eaf3:5ccf:1010101:0:0:0" clearStreamUrl="false" />
     <channel name="3 Film HD" nameOverride="3 Film HD" tvg-id="3-film-hd" enabled="true" category="Кино HD" categoryOverride="Кино HD" serviceRef="5002:0:1:90b5:eaf3:5ccf:1010101:0:0:0" clearStreamUrl="false" />

@@ -1,38 +1,122 @@
 .footer-container-main {
     position: absolute;
     width: 100%;
-    min-height: 50px;
+    height: 53px;
+    /*min-height: 51px;*/
     max-height: 100px;
-    background: #888afb;
-    bottom: -57px;
-    left: -1px;
-    border: 1px solid rgb(100, 100, 100);
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    background: yellow;
+    bottom: -74px;
     text-align: right;
+    box-sizing: border-box;
+    border-bottom: 5px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
-.footer-save-button {
-    width: 90px;
-    margin: 15px 30px;
-}
-.footer-saveData-button {
-    width: 90px;
-    margin: 15px 10px;
-}
-.footer-sort-button {
-    width: 150px;
-    margin-right: 10px;
-}
 
+.footer-live-search,
+.footer-sort-button,
+.footer-save-button,
+.footer-saveData-button,
 .footer-sortOverride-button {
-    width: 150px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(83, 83, 83, 0.98);
+    border-radius: 3px;
+    height: 30px;
+    cursor: pointer;
+    margin: 10px 5px 0 5px;
+    background: rgb(231, 235, 166);
 }
+
 .footer-live-search {
     padding-left: 5px;
-    margin: 10px 15px;
     width: 250px;
     height: 24px;
     float: left;
-    border-radius: 5px;
+}
+
+.footer-sortOverride-button,
+.footer-sort-button {
+    width: 183px;
+}
+
+.footer-sortOverride-button:hover {
+    background: rgb(212, 215, 92);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer-live-search:hover {
+    cursor: pointer;
+}
+
+.footer-sort-button:hover {
+    background: rgb(212, 215, 92);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer-save-button:hover {
+    background: rgb(212, 215, 92);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer-saveData-button:hover {
+    background: rgb(212, 215, 92);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer-save-button:hover {
+    background: rgb(212, 215, 92);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer-saveData-button:active {
+    background: rgb(11, 215, 106);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.footer-save-button:active {
+    background: rgb(215, 1, 1);
+    color: aliceblue;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.footer-developer {
+    font-size: 10px;
+    margin: 22px 3px 0 0;
+    position: relative;
+}
+
+.facebook-icon {
+    position: absolute;
+    left: 0;
+    top: -15px;
+    width: 35px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1093px ) {
+    .footer-container-main {
+        text-align: center;
+        height: 808px;
+    }
+
+    .footer-live-search {
+        width: 94.3%;
+        margin-left: 16px;
+    }
+
+    .footer-sort-button {
+        margin-left: 13px;
+    }
 }

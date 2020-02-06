@@ -10,6 +10,7 @@ const SORT_BY_NAMES = "SORT_BY_NAMES";
 const SORT_BY_OVERRIDE = "SORT_BY_OVERRIDE";
 const LIVE_SEARCHING_TEXT = "LIVE_SEARCHING_TEXT";
 const SAVE_ACTION = "SAVE_ACTION";
+
 const parse = data => {
     let tempStr = '', index = [], tempArr = [], id = 0;
     for (let i = 0; i <= data.length; i++) {
@@ -26,6 +27,7 @@ const parse = data => {
         let count = 0, index = [], tempText = '';
         let name, nameOverride, tvgId, enabled, category, categoryOverride, serviceRef, clearStreamUrl;
         for (let i = 0; i < curr.length; i++) {
+
             if (curr[i] === '"') {
                 ++count;
                 index.push(i);
@@ -80,7 +82,7 @@ const parse = data => {
             }
         }
         acc.push({
-            name,
+            name: name || "Нет данных",
             nameOverride: nameOverride || name,
             tvgId,
             enabled,

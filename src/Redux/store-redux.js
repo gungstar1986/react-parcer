@@ -7,5 +7,4 @@ const reducers = combineReducers({
 });
 
 const store = createStore(reducers, composeWithDevTools());
-window.store = store;
 export default store

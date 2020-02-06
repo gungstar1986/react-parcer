@@ -20,7 +20,7 @@ export const withFilter = (Component) => ({data, sort, search, override, ...prop
 
     // Live search function
     sortedData = search
-        ? sortedData.filter(item => item.name.toLowerCase().includes(search.toLowerCase()))
+        ? sortedData.filter(item => item.name ? item.name.toLowerCase().includes(search.toLowerCase()) : item )
         : sortedData;
     return <Component data={sortedData} {...props}/>
 };

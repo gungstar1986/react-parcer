@@ -6,17 +6,18 @@ const Input = ({tempText, writeTempData, parseData, clearInputArea}) => {
 
     return (
         <div className={"input-main-container"}>
+            <div className={"input-type"}>XMLTV In Area</div>
             <textarea onChange={(e) => writeTempData(e.currentTarget.value)}
-                      placeholder={"Enter <channels Data Here"}
+                      placeholder={"Enter <channels .../> Data Here"}
                       value={tempText}
                       name=""
                       id=""
                       cols="30"
                       rows="10"/>
             {!tempText
-                ? <button disabled={true} onClick={() => parseData(tempText)}>Write Data</button>
-                : <button onClick={() => parseData(tempText)}>Write Data</button>}
-            <button onClick={() => clearInputArea()}>Clear</button>
+                ? <button className={"button-disabled"} disabled={true} onClick={() => parseData(tempText)}>Write Data</button>
+                : <button className={"button-enabled"} onClick={() => parseData(tempText)}>Write Data</button>}
+            <button className={"button-enabled"} onClick={() => clearInputArea()}>Clear</button>
         </div>
     )
 };

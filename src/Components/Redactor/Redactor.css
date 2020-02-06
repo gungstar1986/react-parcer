@@ -1,6 +1,9 @@
 .redactor-main-container {
+    margin-top: 5px;
 
+    width: 100%;
 
+    background: rgb(255, 251, 133);
 }
 
 .redactor-item {
@@ -8,4 +11,28 @@
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 4px;
+    margin: 4px;
+    cursor: pointer;
+    border-top: 1px solid rgb(255, 251, 133);
+    border-bottom: 1px solid rgb(255, 251, 133);
 }
+
+.redactor-item:hover {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background: rgb(231, 235, 166);
+    transition: 0.3s;
+}
+
+.redactor-item input {
+    padding-left: 3px;
+    background: rgb(231, 235, 166);
+    margin-left: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
